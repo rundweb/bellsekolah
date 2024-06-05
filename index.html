@@ -5,38 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bell sekolah</title>
   </head>
+  <style>
+    /* #mp3 {
+      display: none;
+    } */
+  </style>
   <body>
     <h1>Demo bell sekolah</h1>
+    <p>nyala jam 14:10 sama nyala jam 14:15</p>
     <p id="p1"></p>
-    <audio controls autoplay id="myAudio">
-      <!-- <source src="horse.ogg" type="audio/ogg"> -->
+    <p id="p3"></p>
+    <p id="p2"></p>
+    <p id="demo"></p>
+    <audio controls>
       <source src="8F94WQ4-school-bell.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
     </audio>
   </body>
   <script>
     setTimeout(function () {
-      var audio = document.getElementById("myAudio");
-      audio.play();
-    }, 100);
-    // Refresh the page after a delay of 3 seconds
-    setTimeout(function () {
       location.reload();
-    }, 10000); // 3000 milliseconds = 3 seconds
+    }, 30000);
 
     var date = new Date();
     var current_time = date.getHours() + "" + date.getMinutes();
 
-    var bell_masuk = 1249;
+    var bellMasuk = 1410;
 
-    var letsgow = "";
+    var bellpulang = 1415;
 
-    if (bell_masuk == current_time) {
-      letsgow = "ya betul sama ini";
-    } else {
-      letsgow = "beda ini";
+    var text = ""
+
+    if (bellMasuk == current_time) {
+      const audio = document.querySelector("audio");
+      audio.play();
+
+      text = "ini bell masuk"
+    }if(bellpulang == current_time){
+        const audio = document.querySelector("audio");
+      audio.play();
+
+      text = "ini bell pulang"
+    }
+    else {
+        text = "bell nya udah selesai"
     }
 
-    document.getElementById("p1").innerHTML = letsgow;
+    document.getElementById("p1").innerHTML = text;
   </script>
 </html>
