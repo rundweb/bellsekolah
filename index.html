@@ -12,7 +12,7 @@
   </style>
   <body>
     <h1>Demo bell sekolah</h1>
-    <p>nyala jam 14:35 sama nyala jam 14:40</p>
+    <p>nyala jam 14:40 sama nyala jam 14:45</p>
     <p id="p1"></p>
     <audio controls>
       <source src="Jam2.mp3" type="audio/mpeg" />
@@ -22,13 +22,13 @@
     const audio = document.querySelector("audio");
     setTimeout(function () {
       location.reload();
-    }, 20000);
+    }, 60000);
 
     var date = new Date();
     var current_time = date.getHours() + "" + date.getMinutes();
 
-    var bellMasuk = 1435;
-    var bellpulang = 1440;
+    var bellMasuk = 1440;
+    var bellpulang = 1445;
 
     var text = "";
 
