@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bell sekolah</title>
+  </head>
+  <body>
+    <h1>Demo bell sekolah</h1>
+    <p>nyala jam 14:40 sama nyala jam 14:45</p>
+    <p id="p1"></p>
+    
+    <audio controls>
+      <source src="Jam2.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+  <script>
+    const audio = document.querySelector("audio");
+    setTimeout(function () {
+      location.reload();
+    }, 60000);
+
+    var date = new Date();
+    var current_time = date.getHours() + "" + date.getMinutes();
+
+    var bellMasuk = 1440;
+    var bellpulang = 1444;
+
+    var text = "";
+
+    if (bellMasuk == current_time) {
+      audio.play();
+      console.log(audio);
+      text = "masuk jam ke 2";
+    } else if (bellpulang == current_time) {
+      audio.play();
+      console.log(audio);
+      text = "masuk jam ke 2";
+    } else {
+      text = "bell belum berbunyi pada waktunya";
+    }
+
+    document.getElementById("p1").innerHTML = text;
+  </script>
+</html>

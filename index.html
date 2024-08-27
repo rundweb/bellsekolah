@@ -3,47 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bell sekolah</title>
+    <title>Bel Sekolah</title>
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
-  <style>
-    /* #mp3 {
-      display: none;
-    } */
-  </style>
   <body>
-    <h1>Demo bell sekolah</h1>
-    <p>nyala jam 14:40 sama nyala jam 14:45</p>
-    <p id="p1"></p>
-    <audio controls>
-      <source src="Jam2.mp3" type="audio/mpeg" />
-    </audio>
+    <audio id="bell-sound" src="test/8F94WQ4-school-bell.mp3" preload="auto"></audio>
+    
+    <div class="navbar">
+      <div class="info">
+        <img src="assets/images/logo.jpeg" alt="" />
+      </div>
+      <div class="logo">
+        <a href="#">SMK KESEHATAN HARAPAN BUNDA</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-top">
+        <h1>Waktu di <strong>SMK KESEHATAN HARAPAN BUNDA</strong> sekarang :</h1>
+      </div>
+      <div class="content-jam">
+        <h1 id="clock">00:00:00</h1>
+      </div>
+      <div class="content-bottom">
+        <h1 id="date"></h1>
+      </div>
+
+      <div class="list-bell" id="list">
+        
+    </div>
+    <script src="assets/data.js"></script>
   </body>
-  <script>
-    const audio = document.querySelector("audio");
-    setTimeout(function () {
-      location.reload();
-    }, 60000);
-
-    var date = new Date();
-    var current_time = date.getHours() + "" + date.getMinutes();
-
-    var bellMasuk = 1440;
-    var bellpulang = 1445;
-
-    var text = "";
-
-    if (bellMasuk == current_time) {
-      audio.play();
-      console.log(audio);
-      text = "masuk jam ke 2";
-    } else if (bellpulang == current_time) {
-      audio.play();
-      console.log(audio);
-      text = "masuk jam ke 2";
-    } else {
-      text = "bell belum berbunyi pada waktunya";
-    }
-
-    document.getElementById("p1").innerHTML = text;
-  </script>
 </html>
