@@ -293,6 +293,28 @@ function playBelljumat() {
 }
 
 
+function playBellistirahatsatu() {
+  var bell = document.getElementById("bellistirahat1");
+  bell.play(); // Memainkan suara bel
+}
+function playBellistirahatdua() {
+  var bell = document.getElementById("bellistirahat2");
+  bell.play(); // Memainkan suara bel
+}
+function playBellakhirsatu() {
+  var bell = document.getElementById("bell5menitakhir1");
+  bell.play(); // Memainkan suara bel
+}
+function playBellakhirdua() {
+  var bell = document.getElementById("bell5menitakhir2");
+  bell.play(); // Memainkan suara bel
+}
+function playBellawalupacara() {
+  var bell = document.getElementById("bell5menitawalupacara");
+  bell.play(); // Memainkan suara bel
+}
+
+
 
 function checkTime() {
     var now = new Date();
@@ -309,6 +331,9 @@ function checkTime() {
     var jamSekarang = hours.toString()  + minutes.toString()  + seconds.toString();
 
     if(nameOfDay === "Senin"){
+        if (jamSekarang === "6550" ) {
+          playBellawalupacara(); 
+        }
         if (jamSekarang === "700" ) {
           playBellupacara(); 
         }
@@ -325,7 +350,10 @@ function checkTime() {
             playBell3(); 
         }
         if (jamSekarang === "9500" ) {
-          playBellakhir(); 
+          playBellistirahatsatu(); 
+        }
+        if (jamSekarang === "1050" ) {
+          playBellakhirsatu(); 
         }
         if (jamSekarang === "10100" ) {
             playBell4(); 
@@ -337,7 +365,10 @@ function checkTime() {
             playBell6(); 
         }
         if (jamSekarang === "1200" ) {
-          playBellakhir(); 
+          playBellistirahatdua(); 
+        }
+        if (jamSekarang === "12250" ) {
+          playBellakhirdua(); 
         }
         if (jamSekarang === "12300" ) {
             playBell7(); 
@@ -372,7 +403,10 @@ function checkTime() {
             playBell3(); 
         }
         if (jamSekarang === "1000" ) {
-          playBellakhir(); 
+          playBellistirahatsatu(); 
+        }
+        if (jamSekarang === "10150" ) {
+          playBellakhirsatu(); 
         }
         if (jamSekarang === "10200" ) {
             playBell4(); 
@@ -383,9 +417,13 @@ function checkTime() {
         if (jamSekarang === "11150" ) {
           playBelljumat(); 
         }
+        if (jamSekarang === "12250" ) {
+          playBellakhirdua(); 
+        }
         if (jamSekarang === "12300" ) {
             playBell6(); 
         }
+        
         if (jamSekarang === "1300" ) {
             playBell7(); 
         }
@@ -422,7 +460,10 @@ function checkTime() {
             playBell4(); 
         }
         if (jamSekarang === "10100" ) {
-          playBellakhir(); 
+          playBellistirahatsatu(); 
+        }
+        if (jamSekarang === "10250" ) {
+          playBellakhirsatu(); 
         }
         if (jamSekarang === "10300" ) {
             playBell5(); 
@@ -431,7 +472,10 @@ function checkTime() {
             playBell6(); 
         }
         if (jamSekarang === "11500" ) {
-          playBellakhir(); 
+          playBellistirahatdua(); 
+        }
+        if (jamSekarang === "12250" ) {
+          playBellakhirdua(); 
         }
         if (jamSekarang === "12300" ) {
             playBell7(); 
