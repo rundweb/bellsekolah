@@ -230,10 +230,69 @@ setInterval(updateDate, 1000);
 updateDate();
 
 
-function playBell() {
-    var bell = document.getElementById("bell-sound");
+function playBell1() {
+    var bell = document.getElementById("bell1");
     bell.play(); // Memainkan suara bel
 }
+function playBell2() {
+    var bell = document.getElementById("bell2");
+    bell.play(); // Memainkan suara bel
+}
+function playBell3() {
+    var bell = document.getElementById("bell3");
+    bell.play(); // Memainkan suara bel
+}
+function playBell4() {
+    var bell = document.getElementById("bell4");
+    bell.play(); // Memainkan suara bel
+}
+function playBell5() {
+    var bell = document.getElementById("bell5");
+    bell.play(); // Memainkan suara bel
+}
+function playBell6() {
+    var bell = document.getElementById("bell6");
+    bell.play(); // Memainkan suara bel
+}
+function playBell7() {
+    var bell = document.getElementById("bell7");
+    bell.play(); // Memainkan suara bel
+}
+function playBell8() {
+    var bell = document.getElementById("bell8");
+    bell.play(); // Memainkan suara bel
+}
+function playBell9() {
+    var bell = document.getElementById("bell9");
+    bell.play(); // Memainkan suara bel
+}
+function playBell10() {
+    var bell = document.getElementById("bell10");
+    bell.play(); // Memainkan suara bel
+}
+function playBellalquran() {
+    var bell = document.getElementById("bellbacaalquran");
+    bell.play(); // Memainkan suara bel
+}
+function playBellupacara() {
+    var bell = document.getElementById("bellupacara");
+    bell.play(); // Memainkan suara bel
+}
+function playBellakhir() {
+    var bell = document.getElementById("bellakhir");
+    bell.play(); // Memainkan suara bel
+}
+function playBellAwal() {
+    var bell = document.getElementById("bell5menitpelajaran");
+    bell.play(); // Memainkan suara bel
+}
+
+function playBelljumat() {
+  var bell = document.getElementById("bell5menitjumat");
+  bell.play(); // Memainkan suara bel
+}
+
+
 
 function checkTime() {
     var now = new Date();
@@ -251,126 +310,143 @@ function checkTime() {
 
     if(nameOfDay === "Senin"){
         if (jamSekarang === "700" ) {
-            playBell(); 
+          playBellupacara(); 
+        }
+        if (jamSekarang === "7450" ) {
+          playBellAwal(); 
         }
         if (jamSekarang === "7500" ) {
-            playBell(); 
+            playBell1(); 
         }
         if (jamSekarang === "8300" ) {
-            playBell(); 
+            playBell2(); 
         }
         if (jamSekarang === "9100" ) {
-            playBell(); 
+            playBell3(); 
         }
         if (jamSekarang === "9500" ) {
-            playBell(); 
+          playBellakhir(); 
         }
         if (jamSekarang === "10100" ) {
-            playBell(); 
+            playBell4(); 
         }
         if (jamSekarang === "10500" ) {
-            playBell(); 
+            playBell5(); 
         }
         if (jamSekarang === "11200" ) {
-            playBell(); 
+            playBell6(); 
         }
         if (jamSekarang === "1200" ) {
-            playBell(); 
+          playBellakhir(); 
         }
         if (jamSekarang === "12300" ) {
-            playBell(); 
+            playBell7(); 
         }
         if (jamSekarang === "13100" ) {
-            playBell(); 
+            playBell8(); 
         }
         if (jamSekarang === "13500" ) {
-            playBell(); 
+            playBell9(); 
         }
         if (jamSekarang === "14300" ) {
-            playBell(); 
+            playBell10(); 
+        }
+        if (jamSekarang === "15100" ) {
+            playBellakhir(); 
         }
     }else if(nameOfDay === "Jumat"){
         
         if (jamSekarang === "700" ) {
-            playBell(); 
+          playBellalquran(); 
+        }
+        if (jamSekarang === "8150" ) {
+          playBellAwal(); 
         }
         if (jamSekarang === "8200" ) {
-            playBell(); 
+            playBell1(); 
         }
         if (jamSekarang === "900" ) {
-            playBell(); 
+            playBell2(); 
         }
         if (jamSekarang === "9300" ) {
-            playBell(); 
+            playBell3(); 
         }
         if (jamSekarang === "1000" ) {
-            playBell(); 
+          playBellakhir(); 
         }
         if (jamSekarang === "10200" ) {
-            playBell(); 
+            playBell4(); 
         }
         if (jamSekarang === "10500" ) {
-            playBell(); 
+            playBell5(); 
         }
-        if (jamSekarang === "11200" ) {
-            playBell(); 
+        if (jamSekarang === "11150" ) {
+          playBelljumat(); 
         }
         if (jamSekarang === "12300" ) {
-            playBell(); 
+            playBell6(); 
         }
         if (jamSekarang === "1300" ) {
-            playBell(); 
+            playBell7(); 
         }
         if (jamSekarang === "13300" ) {
-            playBell(); 
+            playBell8(); 
         }
         if (jamSekarang === "1400" ) {
-            playBell(); 
+            playBell9(); 
         }
         if (jamSekarang === "14300" ) {
-            playBell(); 
+            playBell10(); 
+        }
+        if (jamSekarang === "15100" ) {
+          playBellakhir(); 
         }
     }else{
         
-        
         if (jamSekarang === "700" ) {
-            playBell(); 
+          playBellalquran(); 
+        }
+        if (jamSekarang === "7250" ) {
+          playBellAwal(); 
         }
         if (jamSekarang === "7300" ) {
-            playBell(); 
+            playBell1(); 
         }
         if (jamSekarang === "8100" ) {
-            playBell(); 
+            playBell2(); 
         }
         if (jamSekarang === "8500" ) {
-            playBell(); 
+            playBell3(); 
         }
         if (jamSekarang === "9300" ) {
-            playBell(); 
+            playBell4(); 
         }
         if (jamSekarang === "10100" ) {
-            playBell(); 
+          playBellakhir(); 
         }
         if (jamSekarang === "10300" ) {
-            playBell(); 
+            playBell5(); 
         }
         if (jamSekarang === "11100" ) {
-            playBell(); 
+            playBell6(); 
         }
         if (jamSekarang === "11500" ) {
-            playBell(); 
+          playBellakhir(); 
         }
         if (jamSekarang === "12300" ) {
-            playBell(); 
+            playBell7(); 
         }
         if (jamSekarang === "13100" ) {
-            playBell(); 
+            playBell8(); 
         }
         if (jamSekarang === "13500" ) {
-            playBell(); 
+            playBell9(); 
         }
         if (jamSekarang === "14300" ) {
-            playBell(); 
+            playBell10(); 
+        }
+        if (jamSekarang === "15100" ) {
+          playBellakhir(); 
         }
     }
     
