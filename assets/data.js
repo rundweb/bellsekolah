@@ -57,7 +57,7 @@ function updateDate() {
   // Setel isi elemen div dengan id "date"
   document.getElementById("date").textContent = formattedDate;
 
-  if (day == "Sunday") {
+  if (day == "Monday") {
     document.getElementById("list").innerHTML = `<div class="bell">
           <h1>UPACARA</h1>
           <p>07.00 - 07.50</p>
@@ -112,7 +112,7 @@ function updateDate() {
             <p>14.30 - 15.00</p>
           </div>
       </div>`;
-  } else if (day == "Thursday") {
+  } else if (day == "Friday") {
     document.getElementById("list").innerHTML = `<div class="bell">
           <h1>TA'LIM</h1>
           <p>07.00-08.20</p>
